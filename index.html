@@ -84,9 +84,11 @@ footer{border-top:1px solid var(--line);padding:30px 5vw;color:var(--mut);displa
 const $=s=>document.querySelector(s),esc=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ok=u=>/^https?:\/\//i.test(u);
 /* ===== CONFIGURATION : à modifier ===== */
-const CONFIG={https://afvhpqwrqtzpsepipgja.supabase.co/rest/v1/ sb_publishable_z_EBPPsQNEqsiawsqzP6CQ_zH0eqyim
-  formEndpoint:'https://formspree.io/forms/maeevdpd/integration',            // ex: https://formspree.io/f/xxxxxxx (reçoit les candidatures par mail)
-  email:'',                   // plan B : ouvre le mail du visiteur vers cette adresse
+const CONFIG={
+  supabaseUrl:'https://afvhpqwrqtzpsepipgja.supabase.co',
+  supabaseKey:'sb_publishable_z_EBPPsQNEqsiawsqzP6CQ_zH0eqyim',
+  formEndpoint:'',
+  email:'',
   socials:{YouTube:'https://www.youtube.com/@sageclanrl',"Twitter / X":'',Discord:'https://discord.gg/F5qfy55BP7',Twitch:'',TikTok:'https://www.tiktok.com/@7sevenrl07',Instagram:''}
 };
 /* ===== ROSTER : modifie ici, ou utilise le mode admin (voir plus bas) ===== */
